@@ -1,0 +1,9 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+requests==2.23.0
+matplotlib==3.2.1
+numpy==1.18.4
+Pillow==8.1.0
+streamlit==0.77.0
+torch==1.7.1+cpu
+torchvision==0.8.2+cpu
+scipy
