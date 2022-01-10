@@ -25,10 +25,14 @@ def fetchAPOD(specific_date='', start_date='', end_date=''):
     #my_bar.progress(0)
 
     response = requests.get(URL_APOD,params=params).json()
+    #st.write(response)
 
     for item in range(len(response)):
         with st.form("my_form"+str(item)):
-            st.image(response[item]['url'])
+            if response[item]['media_type'] == 'video':
+                st.video(response[item]['url'])
+            else:
+                st.image(response[item]['url'])
             st.subheader(response[item]['title'] + " - " + response[item]['date'])
             st.write(response[item]['explanation'])
             checkbox_val = st.checkbox("Like")
