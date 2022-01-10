@@ -21,3 +21,4 @@ The interface is simple: the user inputs a link to an image and the model will d
 
 The sad truth (meh :/) about this micro-service is that, since it's running on a free Heroku account, it's not given enough memory to handle the model for most of the time. But here's a screenshot of it working :)
 
+<img src="https://raw.githubusercontent.com/kxchiu/Heroku_Services/main/Facebook_DETR/demo.jpg" width=600 alt="Facebook DETR Demo"/>
